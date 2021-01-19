@@ -1,0 +1,42 @@
+/* index */
+body{
+  display:flex;
+  justify-content:center;
+  font-size:1rem;
+}
+.btn-secondary {
+  color: #fff;
+  background-color: #1900ff;
+  border-color: #1900ff;
+}
+.bg{
+  width:1024px;
+  /* height:1200px; */
+  border:0.5px solid #ccc;
+  box-shadow:0 0 5px #ccc;
+  margin:20px 20px 20px 20px;
+  background-image:
+  linear-gradient(rgba(150,150,150,.3) 1px, transparent 0),
+  linear-gradient(90deg,rgba(150,150,150,.3) 1px, transparent 0);
+  background-size:13px 13px, 13px 13px;
+	position:relative;  /*popUp*/
+}
+#banner{
+  width:1024px;
+  height:250px;
+}
+.pic{
+  border-radius:50%;
+  padding:20px 20px 20px 20px;
+}
+#basic{
+  display:flex;
+}
+.badge-secondary {
+  color: #fff;
+  background-color: #1900ff;
+  font-size: 1rem;
+}
+.card{
+  background: #d9ff00;
+}
