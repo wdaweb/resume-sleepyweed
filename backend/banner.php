@@ -28,7 +28,7 @@
       <td>
         <input class="btn btn-secondary" type="button" 
           onclick="op('#cover','#cvr','./popup/<?=$do;?>.php?table=<?=$do;?>')" 
-          value="新增網站banner">
+          value="新增網站banner">    <!--帶table值給popup/banner.php，當傳表單給api/edit.php和add.php時他們會知道是哪張表要處理 -->
       </td>
       <td><input class="btn btn-secondary" type="submit" value="確定修改"></td>
       <td><input class="btn btn-secondary" type="reset" value="重置"></td>

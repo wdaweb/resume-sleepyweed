@@ -24,7 +24,7 @@ include_once "base.php";
 
   <div class="bg">
 		<section id="banner">
-			<img src="https://picsum.photos/1024/250/?random=1" onclick="lo('index.php')" > <!--style='cursor:pointer'-->
+			<!-- <img src="https://picsum.photos/1024/250/?random=1" onclick="lo('index.php')" style='cursor:pointer'>  -->
   	</section>
 		<table class="main-tb">
 			<tr class="main-tr">
@@ -46,7 +46,7 @@ include_once "base.php";
 					}
 		?>
 		<section id="admin">
-			<button class="btn btn-secondary mx-3 my-3" onclick="location.href='api/logout.php'" style="float:right;">管理登出</button>
+			<button class="btn btn-secondary mx-3 my-3" onclick="lo('api/logout.php')" style="float:right;">管理登出</button>
 		</section>
 	</div>
 </body>

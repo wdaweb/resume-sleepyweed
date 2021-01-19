@@ -9,6 +9,6 @@
 			<p>管理員登入區</p>
 			<p>帳號:<input name="acc" type="text"></p>
 			<p>密碼:<input name="pw" type="password"></p>
-			<p><input value="送出" type="submit"><input type="reset" value="重置"></p>
+			<p><input class="btn btn-secondary mx-3" value="送出" type="submit"><input class="btn btn-secondary mx-3" type="reset" value="重置"></p>
 </form>
 </div>
