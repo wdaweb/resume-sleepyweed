@@ -3,7 +3,7 @@
 <form action="./api/add.php" method="post" enctype="multipart/form-data">
   <table>
     <tr>
-      <td>基本資料</td>
+      <td>基本資料:</td>
       <td><input type="text" name="content" id=""></td>
     </tr>
     <tr>

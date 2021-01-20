@@ -3,7 +3,7 @@
 <form action="./api/add.php" method="post" enctype="multipart/form-data">
   <table>
     <tr>
-      <td>banner</td>
+      <td>banner:</td>
       <td><input type="file" name="img" id=""></td>
     </tr>
     <tr>

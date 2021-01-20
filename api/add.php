@@ -9,9 +9,6 @@ if(!empty($_FILES['img']['tmp_name'])){
   move_uploaded_file($_FILES['img']['tmp_name'],'../img/'.$_FILES['img']['name']);
   $data['img']=$_FILES['img']['name'];
 }
-if(!empty($_POST['text'])){
-  $data['text']=$_POST['text'];
-}
 
 switch($table){
   case "banner":
@@ -24,6 +21,19 @@ switch($table){
   break;
   
   case "basic_content":
+    $data['content']=$_POST['content'];
+    $data['sh']=1;
+  break;
+
+  case "skill":
+    $data['title']=$_POST['title'];
+    $data['sh']=1;
+  break;
+
+  case "exp":
+    $data['title']=$_POST['title'];
+    $data['date']=$_POST['date'];
+    $data['event']=$_POST['event'];
     $data['content']=$_POST['content'];
     $data['sh']=1;
   break;

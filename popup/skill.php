@@ -1,14 +1,10 @@
-<h3>新增個人照及簡介</h3>
+<h3>新增技能名稱</h3>
 <hr>
 <form action="./api/add.php" method="post" enctype="multipart/form-data">
   <table>
     <tr>
-      <td>個人照:</td>
-      <td><input type="file" name="img" id=""></td>
-    </tr>
-    <tr>
-      <td>個人簡介:</td>
-      <td><input type="text" name="intro" id=""></td>
+      <td>技能名稱:</td>
+      <td><input type="text" name="title" id=""></td>
     </tr>
     <tr>
       <td colspan="2">

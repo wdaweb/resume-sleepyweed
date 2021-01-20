@@ -14,7 +14,7 @@
   ?>
     <tr class="td-cont">
       <td width="20%"><img src="./img/<?=$row['img'];?>" style="width:100px;height:100px"></td>
-      <td width="30%"><textarea name="text" style="width:95%;height:70px"><?=$row['intro'];?></textarea></td>
+      <td width="30%"><input type="text" name="intro[]" value="<?=$row['intro'];?>" style="width:95%;height:70px"></td>
       <td width="10%"><input type="radio" name="sh" value="<?=$row['id'];?>" <?=($row['sh']==1)?'checked':'';?> ></td>
       <td width="10%"><input type="checkbox" name="del[]" value="<?=$row['id'];?>"></td>
       <input type="hidden" name="id[]" value="<?=$row['id'];?>">
@@ -52,7 +52,7 @@
     foreach($rows as $row){
   ?>
     <tr class="td-cont">
-      <td width="40%"><textarea name="text" style="width:95%;height:70px"><?=$row['content'];?></textarea></td>
+      <td width="40%"><input type="text" name="content[]" value="<?=$row['content'];?>" style="width:95%;height:70px"></td>
       <td width="15%"><input type="checkbox" name="sh[]" value="<?=$row['id'];?>" <?=($row['sh']==1)?'checked':'';?> ></td>
       <td width="15%"><input type="checkbox" name="del[]" value="<?=$row['id'];?>"></td>
       <input type="hidden" name="id[]" value="<?=$row['id'];?>">
