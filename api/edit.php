@@ -23,12 +23,21 @@ foreach($_POST['id'] as $key=>$id){
       break;
 
       case "basic_content":
+      case "port":
         $row['content']=$_POST['content'][$key];
         $row['sh']=(in_array($id,$_POST['sh']))?1:0;  //判斷哪幾筆顯示哪幾筆隱藏
       break;
 
       case "skill":
         $row['title']=$_POST['title'][$key];
+        $row['sh']=(in_array($id,$_POST['sh']))?1:0;
+      break;
+
+      case "exp":
+        $row['title']=$_POST['title'][$key];
+        $row['date']=$_POST['date'][$key];
+        $row['event']=$_POST['event'][$key];
+        $row['content']=$_POST['content'][$key];
         $row['sh']=(in_array($id,$_POST['sh']))?1:0;
       break;
 

@@ -1,13 +1,13 @@
 <form action="./api/edit.php" method="post">
-  <table width="90%" class="tb">
+  <table width="80%" class="tb">
   <tbody>
     <tr class="td-cor">
-      <td width="10%">標題</td>
-      <td width="10%">時間</td>
+      <td width="20%">標題</td>
+      <td width="12%">時間</td>
       <td width="20%">活動</td>
-      <td width="30%">內容</td>
-      <td width="10%">顯示</td>
-      <td width="10%">刪除</td>
+      <td width="18%">內容</td>
+      <td width="5%">顯示</td>
+      <td width="5%">刪除</td>
     </tr>
   </tbody>
   <?php
@@ -16,12 +16,12 @@
     foreach($rows as $row){
   ?>
     <tr class="td-cont">
-      <td width="10%"><textarea name="text" style="width:70%;height:30px"><?=$row['title'];?></textarea></td>
-      <td width="10%"><textarea name="text" style="width:70%;height:30px"><?=$row['date'];?></textarea></td>
-      <td width="20%"><textarea name="text" style="width:70%;height:30px"><?=$row['event'];?></textarea></td>
-      <td width="30%"><textarea name="text" style="width:70%;height:30px"><?=$row['content'];?></textarea></td>
-      <td width="10%"><input type="checkbox" name="sh[]" value="<?=$row['id'];?>" <?=($row['sh']==1)?'checked':'';?>></td>
-      <td width="10%"><input type="checkbox" name="del[]" value="<?=$row['id'];?>"></td>
+      <td width="13%"><input type="text" name="title[]" value="<?=$row['title'];?>" style="width:90%;height:40px"></td>
+      <td width="13%"><input type="text" name="date[]" value="<?=$row['date'];?>" style="width:90%;height:40px"></td>
+      <td width="13%"><input type="text" name="event[]" value="<?=$row['event'];?>" style="width:90%;height:40px"></td>
+      <td width="20%"><textarea name="content[]" style="width:90%;height:120px"><?=$row['content'];?></textarea></td>
+      <td width="5%"><input type="checkbox" name="sh[]" value="<?=$row['id'];?>" <?=($row['sh']==1)?'checked':'';?>></td>
+      <td width="5%"><input type="checkbox" name="del[]" value="<?=$row['id'];?>"></td>
       <input type="hidden" name="id[]" value="<?=$row['id'];?>">
     </tr>
   <?php

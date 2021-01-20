@@ -21,6 +21,7 @@ switch($table){
   break;
   
   case "basic_content":
+  case "port":
     $data['content']=$_POST['content'];
     $data['sh']=1;
   break;
