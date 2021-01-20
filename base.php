@@ -5,6 +5,7 @@ session_start();
 $Admin=new DB('admin');
 $Banner=new DB('banner');
 $Basic=new DB('basic');
+$Basic_con=new DB('basic_content');
 $Skill=new DB('skill');
 $Exp=new DB('exp');
 $Port=new DB('port');
@@ -112,9 +113,9 @@ class DB{
         }else{
             //insert
 
-            $sql="insert into $this->table (`".implode("`,`",array_keys($arr))."`) values('".implode("','",$arr)."')";
+            $sql="insert into $this->table (`".implode("`,`",array_keys($arr))."`) values ('".implode("','",$arr)."')";
         }
-        //echo $sql;
+        // echo $sql;
         return $this->pdo->exec($sql);
     }
     function q($sql){

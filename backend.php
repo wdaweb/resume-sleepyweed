@@ -24,7 +24,7 @@ include_once "base.php";
 
   <div class="bg">
 		<section id="banner">
-			<!-- <img src="https://picsum.photos/1024/250/?random=1" onclick="lo('index.php')" style='cursor:pointer'>  -->
+			<img src="https://picsum.photos/1024/250/?random=1" onclick="lo('index.php')" style='cursor:pointer'> 
   	</section>
 		<table class="main-tb">
 			<tr class="main-tr">
@@ -34,6 +34,7 @@ include_once "base.php";
 				<td onclick="lo('?do=exp')" style='cursor:pointer'>Experience</td>
 				<td onclick="lo('?do=port')" style='cursor:pointer'>Portfolio</td>
 				<td onclick="lo('?do=bottom')" style='cursor:pointer'>Bottom</td>
+				<td onclick="lo('?do=admin')" style='cursor:pointer'>Admin</td>
 			</tr>
 		</table>
 		<?php

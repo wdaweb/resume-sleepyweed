@@ -18,6 +18,16 @@ switch($table){
     $data['sh']=0;
   break;
 
+  case "basic":
+    $data['intro']=$_POST['intro'];
+    $data['sh']=0;
+  break;
+  
+  case "basic_content":
+    $data['content']=$_POST['content'];
+    $data['sh']=1;
+  break;
+
   case "admin":
     $data['acc']=$_POST['acc'];
     $data['pw']=$_POST['pw'];
@@ -28,6 +38,10 @@ switch($table){
 }
 $db->save($data);
 
-to("../backend.php?do=$table");
+if($_POST['table']=="basic_content"){
+  to("../backend.php?do=basic");
+}else{
+  to("../backend.php?do=$table");
+}
 
 ?>
