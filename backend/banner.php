@@ -13,7 +13,7 @@
     foreach($rows as $row){
   ?>
     <tr class="td-cont">
-      <td width="50%"><img src="./img/<?=$row['img'];?>" style="width:300px;height:30px"></td>
+      <td width="50%"><img src="./img/<?=$row['img'];?>" style="width:300px;height:30px;baground-size:cover"></td>
       <td width="10%"><input type="radio" name="sh" value="<?=$row['id'];?>" <?=($row['sh']==1)?'checked':'';?>></td>
       <td width="10%"><input type="checkbox" name="del[]" value="<?=$row['id'];?>"></td>
       <input type="hidden" name="id[]" value="<?=$row['id'];?>">

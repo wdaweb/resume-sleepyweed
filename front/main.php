@@ -18,14 +18,13 @@
 		</div>
 	</section>
   <section id="skill" class="container">
-		<div style="text-align:center;font-size:1.8rem">技能</div>
-		<hr>
+		<div class="my-3" style="text-align:center;font-size:1.8rem">技能</div>
 		<?php
 			$skill1=$Skill->all(['sh'=>1,'type'=>'1']);
 			$skill2=$Skill->all(['sh'=>1,'type'=>'2']);
 			$skill3=$Skill->all(['sh'=>1,'type'=>'3']);
 		?>
-		<table style="width:70%;margin:auto;text-align:center">
+		<table style="width:80%;margin:auto;text-align:center">
 			<tr>
 				<td>
 				<?php
@@ -65,8 +64,7 @@
 			<!-- </div> -->
 	</section>
   <section id="exp" class="container my-3">
-		<div style="text-align:center;font-size:1.8rem">學經歷</div>
-		<hr>
+		<div class="my-3" style="text-align:center;font-size:1.8rem">學經歷</div>
 		<div class="row justify-content-center">
 		<?php
 			$exps=$Exp->all(['sh'=>1]);
@@ -86,8 +84,7 @@
 		
 	</section>
 	<section id="port" class="container my-3">
-		<div style="text-align:center;font-size:1.8rem">作品集</div>
-		<hr>
+		<div class="my-3" style="text-align:center;font-size:1.8rem">作品集</div>
 		<div class="row justify-content-center">
 		<?php
 			$ports=$Port->all(['sh'=>1]);
