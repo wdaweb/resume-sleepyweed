@@ -16,10 +16,10 @@
     foreach($rows as $row){
   ?>
     <tr class="td-cont">
-      <td width="13%"><input type="text" name="title[]" value="<?=$row['title'];?>" style="width:90%;height:40px"></td>
-      <td width="13%"><input type="text" name="date[]" value="<?=$row['date'];?>" style="width:90%;height:40px"></td>
-      <td width="13%"><input type="text" name="event[]" value="<?=$row['event'];?>" style="width:90%;height:40px"></td>
-      <td width="20%"><textarea name="content[]" style="width:90%;height:120px"><?=$row['content'];?></textarea></td>
+      <td width="20%"><input type="text" name="title[]" value="<?=$row['title'];?>" style="width:90%;height:40px"></td>
+      <td width="12%"><input type="text" name="date[]" value="<?=$row['date'];?>" style="width:90%;height:40px"></td>
+      <td width="20%"><input type="text" name="event[]" value="<?=$row['event'];?>" style="width:90%;height:40px"></td>
+      <td width="18%"><textarea name="content[]" style="width:90%;height:120px"><?=$row['content'];?></textarea></td>
       <td width="5%"><input type="checkbox" name="sh[]" value="<?=$row['id'];?>" <?=($row['sh']==1)?'checked':'';?>></td>
       <td width="5%"><input type="checkbox" name="del[]" value="<?=$row['id'];?>"></td>
       <input type="hidden" name="id[]" value="<?=$row['id'];?>">

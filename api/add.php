@@ -28,6 +28,7 @@ switch($table){
 
   case "skill":
     $data['title']=$_POST['title'];
+    $data['type']=$_POST['type'];
     $data['sh']=1;
   break;
 

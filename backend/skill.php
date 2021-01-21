@@ -1,8 +1,9 @@
 <form action="./api/edit.php" method="post">
-  <table width="70%" class="tb">
+  <table width="80%" class="tb">
   <tbody>
     <tr class="td-cor">
       <td width="50%">技能名稱</td>
+      <td width="10%">技能分類</td>
       <td width="10%">顯示</td>
       <td width="10%">刪除</td>
     </tr>
@@ -14,6 +15,7 @@
   ?>
     <tr class="td-cont">
       <td width="50%"><input type="text" name="title[]" value="<?=$row['title'];?>" style="width:50%;height:30px"></td>
+      <td width="10%"><input type="text" name="type[]" value="<?=$row['type'];?>"></td>
       <td width="10%"><input type="checkbox" name="sh[]" value="<?=$row['id'];?>" <?=($row['sh']==1)?'checked':'';?>></td>
       <td width="10%"><input type="checkbox" name="del[]" value="<?=$row['id'];?>"></td>
       <input type="hidden" name="id[]" value="<?=$row['id'];?>">

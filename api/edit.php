@@ -30,6 +30,7 @@ foreach($_POST['id'] as $key=>$id){
 
       case "skill":
         $row['title']=$_POST['title'][$key];
+        $row['type']=$_POST['type'][$key];
         $row['sh']=(in_array($id,$_POST['sh']))?1:0;
       break;
 

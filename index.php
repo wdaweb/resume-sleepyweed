@@ -15,8 +15,8 @@ include_once "base.php";
 </head>
 <body>
   <div class="bg">
-		<section id="banner">
-			<img src="https://picsum.photos/1024/250/?random=1" onclick="lo('?do=main')" style='cursor:pointer'>
+		<section id="banner" style="background:url('img/<?=$Banner->find(['sh'=>1])['img'];?>') no-repeat;
+																background-size:cover;cursor:pointer" onclick="lo('?do=main')">
   	</section>
 		<?php
 		$do=(isset($_GET['do']))?$_GET['do']:'main';

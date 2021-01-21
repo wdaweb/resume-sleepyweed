@@ -24,6 +24,9 @@ body{
 #banner{
   width:1024px;
   height:250px;
+  /* background-size:cover !important; */
+  /* background-repeat: no-repeat !important; */
+  /* cursor:pointer !important; */
 }
 .pic{
   border-radius:50%;
@@ -33,6 +36,7 @@ body{
   display:flex;
 }
 .badge-secondary {
+  width: 100px;
   color: #fff;
   background-color: #1900ff;
   font-size: 1rem;
@@ -48,7 +52,7 @@ body{
 }
 .main-tr td{
   color: #1900ff;
-  width:14%;
+  width:20%;
   text-align: center;
   font-size: 1.2rem;
 }
